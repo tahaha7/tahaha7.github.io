@@ -75,6 +75,13 @@ footer{text-align:center;padding:40px 0;color:var(--muted);font-size:.85rem;bord
   <h2>Projects</h2>
   <div id="project-list">
     <div class="project">
+      <h3>📉 Customer Churn Prediction</h3>
+      <p class="tech">Python · scikit-learn · pandas · matplotlib</p>
+      <p>Predicts which telecom customers are likely to cancel, using a synthetic dataset of 5,000 customers. Compared Logistic Regression, Random Forest, and Gradient Boosting with 5-fold cross-validation — logistic regression won with 0.75 ROC-AUC on the held-out test set.</p>
+      <p>Full pipeline: EDA, preprocessing with ColumnTransformer, ROC/PR curves, confusion matrix, and feature importances revealing monthly charges, tenure, and contract type as the top churn drivers.</p>
+      <p><a href="https://github.com/tahaha7/data-science-projects/tree/main/customer-churn-prediction" target="_blank" rel="noopener">View code on GitHub →</a></p>
+    </div>
+    <div class="project">
       <h3>🛒 Market Basket Analysis — Retail Insights from Transaction Data</h3>
       <p class="tech">Python · pandas · matplotlib · seaborn · mlxtend (Apriori)</p>
       <p>End-to-end market basket analysis on a real-world groceries dataset (member number, purchase date, item description). Followed the full data science lifecycle: cleaned and structured transaction data, ran exploratory analysis on frequently purchased items, grouped purchases into baskets and encoded them as a binary matrix, then applied the Apriori algorithm to mine frequent itemsets and generate high-confidence, high-lift association rules — answering "what items are commonly bought together?"</p>
