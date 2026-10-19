@@ -75,6 +75,14 @@ footer{text-align:center;padding:40px 0;color:var(--muted);font-size:.85rem;bord
   <h2>Projects</h2>
   <div id="project-list">
     <div class="project">
+      <h3>📈 Store Sales Forecasting</h3>
+      <p class="tech">Python · scikit-learn · LightGBM · pandas · matplotlib</p>
+      <p>Forecasts daily grocery sales for Corporación Favorita (Ecuador) using 4.5 years of real store data — 3M+ rows across 33 product families and 54 stores. Compared a naive baseline, Ridge, and LightGBM on a 16-day holdout with the competition metric RMSLE — LightGBM won at 0.34 (vs 0.57 Ridge, 0.64 naive).</p>
+      <p>Full time-series pipeline: leak-free lag and rolling-mean features, calendar/oil-price/holiday signals, forecast-vs-actual plots for the biggest families, and feature importances showing recent rolling averages as the strongest predictors.</p>
+      <p><a href="https://github.com/tahaha7/data-science-projects/tree/main/sales-forecasting" target="_blank" rel="noopener">View code on GitHub →</a></p>
+    </div>
+
+    <div class="project">
       <h3>🏠 California House Price Prediction</h3>
       <p class="tech">Python · scikit-learn · pandas · matplotlib</p>
       <p>Predicts median house values for California districts using the real California Housing dataset (20,640 districts, 1990 US Census). Compared Ridge, Lasso, Random Forest, and Gradient Boosting with 5-fold cross-validated RMSE — Gradient Boosting won with a test R² of 0.82.</p>
