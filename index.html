@@ -75,6 +75,14 @@ footer{text-align:center;padding:40px 0;color:var(--muted);font-size:.85rem;bord
   <h2>Projects</h2>
   <div id="project-list">
     <div class="project">
+      <h3>🖼️ Image Classification with a CNN</h3>
+      <p class="tech">Python · PyTorch · torchvision · numpy · matplotlib</p>
+      <p>Classifies 32×32 color images into 10 everyday categories (airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck) using the real CIFAR-10 dataset (60,000 images). Trained a small CNN from scratch — two conv blocks with max-pooling and a 512-unit classifier head — with augmentation (random crops + horizontal flips), reaching 76.1% accuracy on the 10,000-image test set.</p>
+      <p>Full deep-learning pipeline: augmentation on the training split only, Adam with learning-rate step decay, per-epoch test tracking, a 10×10 confusion matrix, and per-class accuracy — ship (88.5%) and automobile (88.2%) lead, cat (58.0%) trails — with the trained weights saved for reuse.</p>
+      <p><a href="https://github.com/tahaha7/data-science-projects/tree/main/image-classification-cnn" target="_blank" rel="noopener">View code on GitHub →</a></p>
+    </div>
+
+    <div class="project">
       <h3>📈 Store Sales Forecasting</h3>
       <p class="tech">Python · scikit-learn · LightGBM · pandas · matplotlib</p>
       <p>Forecasts daily grocery sales for Corporación Favorita (Ecuador) using 4.5 years of real store data — 3M+ rows across 33 product families and 54 stores. Compared a naive baseline, Ridge, and LightGBM on a 16-day holdout with the competition metric RMSLE — LightGBM won at 0.34 (vs 0.57 Ridge, 0.64 naive).</p>
