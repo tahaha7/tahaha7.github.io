@@ -75,6 +75,14 @@ footer{text-align:center;padding:40px 0;color:var(--muted);font-size:.85rem;bord
   <h2>Projects</h2>
   <div id="project-list">
     <div class="project">
+      <h3>💳 Credit Card Fraud Detection</h3>
+      <p class="tech">Python · scikit-learn · pandas · matplotlib · Hugging Face Datasets</p>
+      <p>Spots fraudulent card transactions in the real ULB credit card dataset (284,807 European transactions, only 492 fraud — 0.17%). An Isolation Forest and an autoencoder go head to head, judged on precision-recall at a low false-positive rate — accuracy would say 99.83% for a model that catches nothing, so it is not used.</p>
+      <p>The autoencoder wins: average precision 0.5268 vs 0.1578 for Isolation Forest on the 56,962-transaction test set. At its best-F1 threshold it catches 54 of 98 fraud cases (55% recall) with about half its flags correct (precision 0.50) — 55 false alarms across ~57,000 transactions — with both trained models saved for reuse.</p>
+      <p><a href="https://github.com/tahaha7/data-science-projects/tree/main/fraud-detection" target="_blank" rel="noopener">View code on GitHub →</a></p>
+    </div>
+
+    <div class="project">
       <h3>📰 News Topic Classification</h3>
       <p class="tech">Python · scikit-learn · pandas · matplotlib · Hugging Face Datasets</p>
       <p>Classifies news articles into World, Sports, Business, or Sci/Tech using the real AG News dataset (120,000 training and 7,600 test articles, evenly split across the four topics). A TF-IDF (unigrams + bigrams) + LinearSVC baseline trained on all 120,000 training articles reached 92.16% accuracy and a macro F1 of 0.9215 on the full test set.</p>
