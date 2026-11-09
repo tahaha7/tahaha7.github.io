@@ -75,6 +75,14 @@ footer{text-align:center;padding:40px 0;color:var(--muted);font-size:.85rem;bord
   <h2>Projects</h2>
   <div id="project-list">
     <div class="project">
+      <h3>🤖 RAG Chatbot over Wikipedia</h3>
+      <p class="tech">Python · sentence-transformers · FAISS · Hugging Face Datasets</p>
+      <p>Ask questions and get answers pulled straight from real Wikipedia articles — a retrieval-augmented generation (RAG) chatbot built from scratch: 5,000 articles chunked and embedded with all-MiniLM-L6-v2, indexed in FAISS, and answered only from the passages retrieved, so every reply quotes its source instead of inventing one.</p>
+      <p>Retrieval recall on test questions: Recall@1 82%, Recall@3 91%, Recall@5 91%, Recall@10 91% — the expected article lands in the top 5 for 91% of questions. Interactive CLI chat with a /sources command traces every answer back to its article, and the FAISS index is saved for reuse.</p>
+      <p><a href="https://github.com/tahaha7/data-science-projects/tree/main/rag-chatbot" target="_blank" rel="noopener">View code on GitHub →</a></p>
+    </div>
+
+    <div class="project">
       <h3>💳 Credit Card Fraud Detection</h3>
       <p class="tech">Python · scikit-learn · pandas · matplotlib · Hugging Face Datasets</p>
       <p>Spots fraudulent card transactions in the real ULB credit card dataset (284,807 European transactions, only 492 fraud — 0.17%). An Isolation Forest and an autoencoder go head to head, judged on precision-recall at a low false-positive rate — accuracy would say 99.83% for a model that catches nothing, so it is not used.</p>
